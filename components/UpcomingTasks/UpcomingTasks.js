@@ -25,7 +25,7 @@ function UpcomingTasks() {
         <View>
             <UpcomTaskHeader />
             <ScrollView  horizontal={true} style={styles.tasksViews}>
-            {orders.map((order) => <Order orderTest={order}/> )}
+            {orders.map((order) => <Order key={order.orderName} orderTest={order}/> )}
             </ScrollView>
         </View>
     )
