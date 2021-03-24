@@ -32,12 +32,14 @@ const styles = StyleSheet.create({
         marginLeft: 'auto',
         marginRight: 'auto',
         marginBottom: 44,
-        //'''''''shadow'''''''
+        //"shadow"
         borderWidth: 1,
         borderLeftColor: "#1C232A",
         borderBottomColor: "#1C232A",
         borderTopColor: '#050d14',
         borderRightColor: '#050d14',
+        // shadow outside
+        elevation: 15,
     },
 });
 

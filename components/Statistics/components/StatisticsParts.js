@@ -40,15 +40,15 @@ const styles = StyleSheet.create({
         height: 138,
         flexWrap: 'wrap',
         borderRadius: 6,
-        borderTopWidth: 2,
-        borderLeftWidth: 2,
-        borderRightWidth: 3,
-        borderBottomWidth: 3,
+        backgroundColor: '#10161C',
+        //"shadows"
+        borderWidth: 2,
         borderLeftColor: "#1C232A",
         borderTopColor: "#1C232A",
         borderBottomColor: '#040B11',
         borderRightColor: '#040B11',
-        backgroundColor: '#10161C',
+        // shadow outside
+        elevation: 15,
     },
 });
 

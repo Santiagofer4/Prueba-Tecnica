@@ -49,18 +49,15 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         backgroundColor: '#10161C',
         marginRight: 14,
-        //'''''shadows'''''
+        elevation: 10,
+        //"shadows""
         borderWidth: 2,
         borderLeftColor: "#1C232A",
         borderTopColor: "#1C232A",
         borderBottomColor: '#040B11',
         borderRightColor: '#040B11',
-        // (test) don't work
-        shadowColor: 'black',
-        shadowOpacity: 0.26,
-        shadowOffset: { width: 0, height: 2 },
-        shadowRadius: 10,
-        elevation: 3,
+        // shadow outside
+        elevation: 15,
     },
 });
 
