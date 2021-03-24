@@ -8,6 +8,7 @@ import {
 import DateFilter from './components/DateFilter';
 import graph from './components/graph.png'
 import Months from './components/Months';
+import Number from './components/Number';
 
 
 
@@ -15,49 +16,28 @@ function StatisticsDate() {
     return (
         <View style={styles.baseContainer}>
             <DateFilter />
-            <View style={{ flexDirection: 'row', marginLeft: 'auto', marginRight: 'auto', }}>
-                <Text style={styles.sign}>$</Text>
-                <Text style={styles.number}>13,543</Text>
-            </View>
+            <Number/>
             <Image source={graph} style={{ width: "100%" }} />
-            <Months/>
+            <Months />
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    month: {
-        color: '#89898A',
-        fontFamily: "Avenir",
-        fontSize: 16,
-        fontWeight: 'bold',
-    },
-    number: {
-        color: '#FFFFFF',
-        fontFamily: "Avenir",
-        fontSize: 45,
-        fontWeight: 'bold',
-        alignSelf: 'center',
-        marginTop: 41,
-        marginBottom: 20,
-    },
-    sign: {
-        color: '#FFFFFF',
-        fontFamily: ".SF NS Display",
-        fontSize: 22,
-        marginTop: 45,
-        marginRight: 7
-    },
     baseContainer: {
         height: 355,
         width: 310,
-        borderWidth: 1,
-        borderColor: '#10161C',
         borderRadius: 16,
         backgroundColor: '#10161C',
         marginLeft: 'auto',
         marginRight: 'auto',
         marginBottom: 44,
+        //'''''''shadow'''''''
+        borderWidth: 1,
+        borderLeftColor: "#1C232A",
+        borderBottomColor: "#1C232A",
+        borderTopColor: '#050d14',
+        borderRightColor: '#050d14',
     },
 });
 

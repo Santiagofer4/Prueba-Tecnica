@@ -15,7 +15,7 @@ import indicator from './components/indicator.png'
 
 function App() {
   return (
-      <ScrollView  style={styles.baseContainer}>
+      <ScrollView style={styles.baseContainer}>
         <Header/>
         <Text style={styles.create}>CREATE +</Text>
         <Filters/>
@@ -31,7 +31,6 @@ function App() {
 const styles = StyleSheet.create({
   baseContainer: { 
     backgroundColor: '#040B11',
-    flex:1,
   },
   create: {
     marginRight: 33,

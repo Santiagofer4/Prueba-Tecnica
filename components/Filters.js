@@ -13,7 +13,7 @@ function Filters() {
             <Text style={styles.all}>All</Text>
             <Text style={styles.filter}>In Progress</Text>
             <Text style={styles.filter}>Started</Text>
-            <Text style={styles.filterCompleted}>Completed</Text>
+            <Text style={[styles.filter,{marginRight: 33}]}>Completed</Text>
         </View>
     )
 }
@@ -43,13 +43,6 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: 'bold',
     },
-    filterCompleted: {
-        color: '#FFFFFF',
-        fontFamily: 'Avenir',
-        fontSize: 14,
-        fontWeight: 'bold',
-        marginRight: 33,
-    }
 });
 
 export default Filters
